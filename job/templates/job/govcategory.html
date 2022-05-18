@@ -1,0 +1,25 @@
+{% extends 'job/base.html' %}
+{% block title %} {{ privacy.meta_title }}  {% endblock %}
+{% load staticfiles %}
+{% block meta_description %} {{ privacy.meta_description }} {% endblock %}
+{% block meta_keywords %} {{privacy.meta_keywords}} {% endblock %}
+{% block meta_title %} {{privacy.meta_title}} {% endblock %}
+
+
+{% block content %}
+
+    <div class="govcategor">
+        <div class="container">
+          <div class="col-sm-08 001">
+              <div class="text_ab">
+                  <p>{{ govcategory.govcat_details|safe }}</p>
+              </div>
+          </div>
+          <div class="col-sm-04 001">
+          
+          </div>
+        </div>
+    </div>
+
+
+{% endblock %}
